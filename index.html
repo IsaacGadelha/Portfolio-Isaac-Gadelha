@@ -190,14 +190,112 @@
       </header>
 
       <div class="block">
-        <h3>Experiência Profissional</h3>
-        <div class="divider"></div>
-        <article class="job"><div class="when">Out 2024 – Atual</div><div><b>Assistente de Vendas — Ferronorte Industrial</b><span class="city"> | Teresina, PI</span></div></article>
-        <article class="job"><div class="when">Mar 2023 – Mai 2024</div><div><b>Assistente de Contabilidade — CETESV</b><span class="city"> | Teresina, PI</span></div></article>
-        <article class="job"><div class="when">Mar 2022 – Mar 2023</div><div><b>Auxiliar de Pagamento — Exército Brasileiro</b><span class="city"> | Teresina, PI</span></div></article>
-        <article class="job"><div class="when">Fev 2020 – Fev 2022</div><div><b>Estagiário — Caixa Econômica Federal</b><span class="city"> | Teresina, PI</span></div></article>
-      </div>
+  <h3>Experiência Profissional</h3>
+  <div class="divider"></div>
 
+  <article class="job" onclick="toggleAtividades(this)">
+    <div class="when">Out 2024 – Atual</div>
+    <div>
+      <b>Assistente de Vendas — Ferronorte Industrial</b>
+      <span class="city"> | Teresina, PI</span>
+    </div>
+    <div class="atividades">
+      <ul>
+        <li>Controle dos pedidos dos clientes, garantindo a entrega dos produtos nos prazos e condições acordadas.</li>
+        <li>Acompanhamento dos pedidos dos clientes, garantindo o cumprimento dos prazos e das condições contratuais acordadas.</li>
+        <li>Realização de visitas de vendas aos clientes, esclarecendo dúvidas e oferecendo orientações sobre os produtos.</li>
+        <li>Apoio à equipe de vendas, auxiliando na elaboração de propostas comerciais e fechamento de negócios.</li>
+        <li>Gerenciamento de reuniões periódicas com frequência semanal e quinzenal.</li>
+        <li>Elaboração de Planilhas e Dashboards para reuniões.</li>
+      </ul>
+    </div>
+  </article>
+
+  <article class="job" onclick="toggleAtividades(this)">
+    <div class="when">Mar 2023 – Mai 2024</div>
+    <div>
+      <b>Assistente de Contabilidade — CETESV</b>
+      <span class="city"> | Teresina, PI</span>
+    </div>
+    <div class="atividades">
+      <ul>
+        <li>Organização e arquivamento de documentos contábeis, facilitando o acesso e a consulta de informações.</li>
+        <li>Elaboração de balanços contábeis e relatórios financeiros, colaborando com a análise de desempenho da empresa.</li>
+        <li>Auxílio na preparação de declarações fiscais, cumprindo prazos e garantindo a conformidade com a legislação vigente.
+        <li>Realização de conciliações bancárias, garantindo que os saldos contábeis estivessem em conformidade com os extratos.</li>
+        </li>
+      </ul>
+    </div>
+  </article>
+
+  <article class="job" onclick="toggleAtividades(this)">
+    <div class="when">Mar 2022 – Mar 2023</div>
+    <div>
+      <b>Auxiliar de Pagamento — Exército Brasileiro</b>
+      <span class="city"> | Teresina, PI</span>
+    </div>
+    <div class="atividades">
+      <ul>
+        <li>Auxílio em atividades administrativas, preenchendo planilhas e organizando documentos para facilitar o acesso às informações.</li>
+        <li>Atendimento ao público, prezando pela cordialidade durante o serviço para garantir a satisfação do cliente.</li>
+        <li>Separação de materiais utilizados durante o dia, agilizando o processo de trabalho dos profissionais.</li>
+      </ul>
+    </div>
+  </article>
+
+  <article class="job" onclick="toggleAtividades(this)">
+    <div class="when">Fev 2020 – Fev 2022</div>
+    <div>
+      <b>Estagiário — Caixa Econômica Federal</b>
+      <span class="city"> | Teresina, PI</span>
+    </div>
+    <div class="atividades">
+      <ul>
+        <li>Organização e arquivamento de documentos, garantindo a facilidade de acesso.</li>
+        <li>Atendimento telefônico, fornecendo informações e orientações aos clientes.</li>
+        <li>Organização de arquivos e documentos, facilitando o acesso e a segurança das informações.</li>
+        <li>Prestação de suporte aos clientes, cadastrando informações no sistema e garantindo agilidade nas soluções.</li>
+      </ul>
+    </div>
+  </article>
+</div>
+
+<style>
+  .atividades {
+    display: none;
+    margin-top: 8px;
+    padding-left: 15px;
+    color: #777;
+    font-size: 14px;
+  }
+
+  .job {
+    margin-bottom: 15px;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 8px;
+    transition: background 0.3s;
+  }
+
+  .job:hover {
+    background: #3a3a3a;
+  }
+</style>
+
+<script>
+  function toggleAtividades(element) {
+    const atividades = element.querySelector(".atividades");
+    const isOpen = atividades.style.display === "block";
+
+    // Fecha todas
+    document.querySelectorAll(".atividades").forEach(div => div.style.display = "none");
+
+    // Se não estava aberta, abre
+    if (!isOpen) {
+      atividades.style.display = "block";
+    }
+  }
+</script>
       <div class="block">
         <h3>Formação Acadêmica</h3>
         <div class="divider"></div>
